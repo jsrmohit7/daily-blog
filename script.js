@@ -1,0 +1,91 @@
+const cursor =
+document.querySelector('.cursor');
+
+const glow =
+document.querySelector('.cursor-glow');
+
+document.addEventListener(
+'mousemove',
+(e)=>{
+
+cursor.style.left =
+e.clientX + 'px';
+
+cursor.style.top =
+e.clientY + 'px';
+
+glow.style.left =
+e.clientX + 'px';
+
+glow.style.top =
+e.clientY + 'px';
+
+}
+);
+
+window.addEventListener(
+'scroll',
+()=>{
+
+const height =
+
+document.documentElement.scrollHeight
+
+-
+
+window.innerHeight;
+
+const scrolled =
+
+(window.scrollY/height)*100;
+
+document.getElementById(
+'progress'
+).style.width =
+scrolled + '%';
+
+}
+);
+fetch("data/posts.json")
+.then(response => response.json())
+.then(posts => {
+
+const blogList =
+document.getElementById("blogList");
+
+if(!blogList) return;
+
+posts.forEach(post => {
+
+const card =
+document.createElement("a");
+
+card.className = "card";
+
+card.href = post.link;
+
+card.innerHTML = `
+
+<span class="date">
+${post.date}
+</span>
+
+<h2>
+${post.title}
+</h2>
+
+<p>
+${post.description}
+</p>
+
+<div class="read">
+Read Article →
+</div>
+
+`;
+
+blogList.appendChild(card);
+
+});
+
+});
