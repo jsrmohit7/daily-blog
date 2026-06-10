@@ -6,12 +6,12 @@ box-sizing:border-box;
 
 :root{
 
---bg:#080808;
---card:#111111;
---text:#f5f5f5;
---secondary:#9f9f9f;
---accent:#9d1b2f;
---accent2:#ff7a90;
+--bg:#f5f3ee;
+--card:#ffffff;
+--text:#111111;
+--secondary:#555555;
+--accent:#000000;
+--accent2:#333333;
 
 }
 
@@ -22,8 +22,8 @@ scroll-behavior:smooth;
 body{
 
 font-family:'Inter',sans-serif;
-background:var(--bg);
-color:var(--text);
+background:#f5f3ee;
+color:#111;
 
 padding:0 8%;
 overflow-x:hidden;
@@ -192,36 +192,38 @@ padding:80px 0 120px;
 
 .tag{
 
-color:var(--accent2);
+display:inline-block;
 
-margin-bottom:15px;
+padding:8px 18px;
+
+background:black;
+
+color:white;
+
+font-weight:700;
 
 letter-spacing:2px;
 
-}
+margin-bottom:20px;
 
+}
 .hero h1{
 
 font-family:
 'Cormorant Garamond',
 serif;
 
-font-size:9rem;
+font-size:8rem;
 
-line-height:.85;
+line-height:.9;
 
-background:
-linear-gradient(
-90deg,
-#ffffff,
-#ff9aac
-);
-
--webkit-background-clip:text;
-
-color:transparent;
+color:black;
 
 max-width:900px;
+
+text-shadow:
+4px 4px 0 white,
+8px 8px 0 black;
 
 }
 
@@ -255,53 +257,57 @@ overflow:hidden;
 
 text-decoration:none;
 
-color:white;
+color:black;
 
-background:var(--card);
+background:white;
 
 padding:50px;
 
-margin-bottom:30px;
+margin-bottom:40px;
 
-border-radius:30px;
+border:4px solid black;
 
-border:
-1px solid rgba(255,255,255,.05);
+border-radius:0;
 
-transition:.5s;
+box-shadow:
+10px 10px 0 black;
+
+transition:.3s;
 
 }
-
 .card::before{
 
-content:'';
+content:"";
 
 position:absolute;
 
-inset:0;
+top:0;
+right:0;
+
+width:140px;
+height:140px;
 
 background:
-repeating-linear-gradient(
-45deg,
-transparent,
-transparent 10px,
-rgba(255,255,255,.01) 11px,
-rgba(255,255,255,.01) 12px
+
+radial-gradient(
+black 10%,
+transparent 11%
 );
+
+background-size:
+12px 12px;
+
+opacity:.1;
 
 }
 
 .card:hover{
 
 transform:
-translateY(-8px);
-
-border-color:
-rgba(255,122,144,.3);
+translate(-5px,-5px);
 
 box-shadow:
-0 20px 60px
-rgba(157,27,47,.25);
+15px 15px 0 black;
 
 }
 
@@ -350,11 +356,11 @@ footer{
 padding:50px 0;
 
 border-top:
-1px solid rgba(255,255,255,.05);
+4px solid black;
 
 text-align:center;
 
-color:var(--secondary);
+color:black;
 
 }
 
