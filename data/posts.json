@@ -3,14 +3,23 @@
     "title": "My New Research",
     "date": "06 June 2026",
     "description": "Research on AI and image segmentation.",
-    "link": "posts/my-research.html"
+    "link": "posts/my-research.html",
+    "category": "Research"
   },
 
   {
     "title": "Visualizing Hyperspectral Brain Images and Understanding Spectral Signatures",
-    "date": "11 June 2026",
-    "description": "Exploring hyperspectral brain datasets, spectral signatures, ROI analysis, and their role in image segmentation.",
+    "date": "10 June 2026",
+    "description": "Exploring hyperspectral brain datasets.",
     "link": "posts/hyperspectral-visualization.html",
     "category": "Research"
+  },
+
+  {
+    "title": "The Power of Small Steps",
+    "date": "11 June 2026",
+    "description": "Why consistent small actions create extraordinary results.",
+    "link": "posts/the-power-of-small-steps.html",
+    "category": "Thoughts"
   }
 ]
