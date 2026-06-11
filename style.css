@@ -172,7 +172,9 @@ gap:30px;
 
 text-decoration:none;
 
-color:white;
+color:#4A2C2A;
+
+font-weight:600;
 
 transition:.3s;
 
@@ -180,7 +182,7 @@ transition:.3s;
 
 .nav-links a:hover{
 
-color:var(--accent2);
+color:#8B5E3C;
 
 }
 
@@ -584,6 +586,10 @@ serif;
 font-size:2rem;
 
 margin-bottom:15px;
+
+color:#3E2723;
+
+font-weight:700;
 
 }
 
