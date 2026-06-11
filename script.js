@@ -46,14 +46,26 @@ scrolled + '%';
 
 }
 );
+let allPosts = [];
+
 fetch("data/posts.json")
 .then(response => response.json())
 .then(posts => {
+
+allPosts = posts;
+
+renderPosts(posts);
+
+});
+
+function renderPosts(posts){
 
 const blogList =
 document.getElementById("blogList");
 
 if(!blogList) return;
+
+blogList.innerHTML = "";
 
 posts.forEach(post => {
 
@@ -88,4 +100,23 @@ blogList.appendChild(card);
 
 });
 
-});
+}
+
+function filterPosts(category){
+
+if(category === "All"){
+
+renderPosts(allPosts);
+
+return;
+
+}
+
+const filtered =
+allPosts.filter(post =>
+post.category === category
+);
+
+renderPosts(filtered);
+
+}
