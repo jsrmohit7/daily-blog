@@ -5,4 +5,11 @@
   "description": "Research on AI and image segmentation.",
   "link": "posts/my-research.html"
 }
+{
+  "title": "Visualizing Hyperspectral Brain Images and Understanding Spectral Signatures",
+  "date": "11 June 2026",
+  "description": "Exploring hyperspectral brain datasets, spectral signatures, ROI analysis, and their role in image segmentation.",
+  "link": "posts/hyperspectral-visualization.html",
+  "category": "Research"
+}
 ]
