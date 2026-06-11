@@ -120,3 +120,42 @@ post.category === category
 renderPosts(filtered);
 
 }
+
+const searchInput =
+document.getElementById("searchInput");
+
+if(searchInput){
+
+searchInput.addEventListener(
+"keyup",
+()=>{
+
+const search =
+searchInput.value.toLowerCase();
+
+const filtered =
+allPosts.filter(post =>
+
+post.title
+.toLowerCase()
+.includes(search)
+
+||
+
+post.description
+.toLowerCase()
+.includes(search)
+
+||
+
+(post.category || "")
+.toLowerCase()
+.includes(search)
+
+);
+
+renderPosts(filtered);
+
+});
+
+}
