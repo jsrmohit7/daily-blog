@@ -29,5 +29,13 @@
   "description": "When everything around you changes, there is one thing that remains constant—you.",
   "link": "posts/you-have-yourself.html",
   "category": "Personal Advice"
+  },
+  
+  {
+  "title": "What is U-Net?",
+  "date": "17 June 2026",
+  "description": "Understanding the encoder-decoder architecture behind modern image segmentation.",
+  "link": "posts/what-is-unet.html",
+  "category": "Research Notes"
   }
 ]
