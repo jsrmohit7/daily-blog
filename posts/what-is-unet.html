@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>What is U-Net?</title>
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+MOHIT
+</div>
+
+<div class="nav-links">
+
+<a href="../index.html">Home</a>
+<a href="../about.html">About</a>
+
+</div>
+
+</nav>
+
+<article class="post-container">
+
+<div class="post-meta">
+
+<span>Research Notes</span>
+<span>•</span>
+<span>17 June 2026</span>
+
+</div>
+
+<h1 class="post-title">
+What is U-Net?
+</h1>
+
+<p class="post-subtitle">
+Understanding the most popular deep learning architecture for image segmentation.
+</p>
+
+<div class="post-content">
+
+<p>
+
+While exploring image segmentation techniques for hyperspectral brain imaging, one architecture appeared repeatedly in research papers: U-Net. It has become one of the most widely used neural networks for medical image segmentation.
+
+</p>
+
+<h2>
+What is U-Net?
+</h2>
+
+<p>
+
+U-Net is a Convolutional Neural Network (CNN) specifically designed for image segmentation. It was introduced in 2015 for biomedical image analysis and quickly became a standard model in medical imaging research.
+
+</p>
+
+<p>
+
+Unlike image classification models that predict a single label for an entire image, U-Net predicts a label for every pixel. This allows the network to identify the exact location and shape of structures within an image.
+
+</p>
+
+<h2>
+Why is it called U-Net?
+</h2>
+
+<p>
+
+The architecture resembles the letter "U". It consists of two major parts:
+
+</p>
+
+<ul>
+
+<li><strong>Encoder (Contracting Path)</strong> – Extracts important features while reducing image size.</li>
+
+<li><strong>Decoder (Expanding Path)</strong> – Reconstructs the image while predicting pixel-level segmentation.</li>
+
+</ul>
+
+<h2>
+Architecture Overview
+</h2>
+
+<p>
+
+The encoder gradually reduces spatial dimensions through convolution and pooling operations. During this process, the network learns high-level features.
+
+</p>
+
+<p>
+
+The decoder then upsamples the feature maps to recover spatial details and generate the final segmentation mask.
+
+</p>
+
+<p>
+
+A key innovation of U-Net is the use of <strong>Skip Connections</strong>, which transfer information directly from the encoder to the decoder.
+
+</p>
+
+<h2>
+What are Skip Connections?
+</h2>
+
+<p>
+
+When images are repeatedly downsampled, important spatial information can be lost. Skip connections help preserve fine details by connecting encoder layers directly to corresponding decoder layers.
+
+</p>
+
+<p>
+
+This allows the network to accurately reconstruct boundaries and shapes in the final segmentation output.
+
+</p>
+
+<h2>
+Why is U-Net Useful in Medical Imaging?
+</h2>
+
+<ul>
+
+<li>Works well with limited datasets.</li>
+
+<li>Produces accurate pixel-level segmentation.</li>
+
+<li>Preserves fine anatomical structures.</li>
+
+<li>Widely adopted in biomedical research.</li>
+
+<li>Serves as a foundation for many advanced segmentation models.</li>
+
+</ul>
+
+<h2>
+Application in My Research
+</h2>
+
+<p>
+
+In my hyperspectral brain imaging research at the QUEDS Department, BIT Mesra, U-Net is one of the architectures I am studying for future segmentation experiments.
+
+</p>
+
+<p>
+
+Since hyperspectral images contain both spatial and spectral information, U-Net can potentially be adapted to learn tissue boundaries while leveraging spectral characteristics across multiple wavelengths.
+
+</p>
+
+<h2>
+Limitations
+</h2>
+
+<ul>
+
+<li>Requires labeled masks (Ground Truth).</li>
+
+<li>Computationally expensive for large hyperspectral datasets.</li>
+
+<li>May struggle when training data is extremely limited.</li>
+
+</ul>
+
+<blockquote>
+
+U-Net transformed medical image segmentation by making pixel-level prediction practical and highly accurate.
+
+</blockquote>
+
+<h2>
+Key Takeaway
+</h2>
+
+<p>
+
+U-Net is one of the most important architectures in image segmentation. Its encoder-decoder structure and skip connections enable precise localization, making it especially effective for biomedical and medical imaging applications.
+
+</p>
+
+</div>
+
+</article>
+
+</body>
+</html>
