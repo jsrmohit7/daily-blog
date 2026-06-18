@@ -37,5 +37,13 @@
   "description": "Understanding the encoder-decoder architecture behind modern image segmentation.",
   "link": "posts/what-is-unet.html",
   "category": "Research"
+  },
+
+  {
+  "title": "What is Ground Truth?",
+  "date": "18 June 2026",
+  "description": "Understanding the role of Ground Truth in image segmentation and why it serves as the reference for training and evaluating models.",
+  "link": "posts/what-is-ground-truth.html",
+  "category": "Research"
   }
 ]
