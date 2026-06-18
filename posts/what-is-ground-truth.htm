@@ -1,0 +1,91 @@
+<h1 class="post-title">
+What is Ground Truth?
+</h1>
+
+<p class="post-subtitle">
+One of the most important concepts in image segmentation and machine learning.
+</p>
+
+<div class="post-content">
+
+<p>
+
+While studying image segmentation, I frequently came across the term "Ground Truth". Understanding this concept is essential because it serves as the reference against which models are trained and evaluated.
+
+</p>
+
+<h2>
+Definition
+</h2>
+
+<p>
+
+Ground Truth refers to the correct, verified, and manually labeled data used as the standard for comparison. In image segmentation, it is usually a mask created by experts that identifies the true location of objects or tissues within an image.
+
+</p>
+
+<h2>
+Ground Truth in Brain Segmentation
+</h2>
+
+<p>
+
+Suppose we have a brain image and want to segment tumor tissue. An expert manually marks the tumor region pixel by pixel. This manually created mask becomes the Ground Truth.
+
+</p>
+
+<p>
+
+When a segmentation model predicts the tumor region, its output is compared with the Ground Truth mask to determine accuracy.
+
+</p>
+
+<h2>
+Why is Ground Truth Important?
+</h2>
+
+<p>
+
+Without Ground Truth, it is impossible to know whether a model's prediction is correct or incorrect. It acts as the benchmark for training, validation, and testing.
+
+</p>
+
+<ul>
+
+<li>Provides correct labels for training.</li>
+
+<li>Helps evaluate model performance.</li>
+
+<li>Enables calculation of metrics such as Dice Score and IoU.</li>
+
+<li>Ensures objective comparison between different models.</li>
+
+</ul>
+
+<h2>
+Challenge in Hyperspectral Brain Imaging
+</h2>
+
+<p>
+
+One challenge in my current research is that the hyperspectral brain dataset does not include segmentation masks. This means Ground Truth is not readily available and may need to be generated manually or through expert annotation.
+
+</p>
+
+<blockquote>
+
+A machine learning model can only learn what the Ground Truth teaches it.
+
+</blockquote>
+
+<h2>
+Key Takeaway
+</h2>
+
+<p>
+
+Ground Truth is the reference answer in machine learning and image segmentation. It represents the actual labeled data that allows researchers to train models and measure how accurately predictions match reality.
+
+</p>
+
+</div>
